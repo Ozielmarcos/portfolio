@@ -1,0 +1,65 @@
+header {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9db79;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.topo img {
+    width: 50px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 25px;
+}
+
+@media screen and (max-width: 436px) {
+    header {
+        width: 100%;
+    }
+
+    .topo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topo img {
+        width: 80px;
+        margin-top: 0;
+    }
+
+    .links-topo {
+        padding-top: 15px;
+        border-top: 1px solid black;
+    }
+
+    .link {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    header,
+    .topo {
+        width: 100%;
+    }
+}

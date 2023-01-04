@@ -1,0 +1,60 @@
+footer {
+    width: 100%;
+    background-color: #000;
+    color: #c1c1c1;
+}
+
+.rodape {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+
+.rodape img {
+    width: 100px;
+}
+
+.box h4 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.box {
+    width: 200px;
+}
+
+.autor {
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 436px) {
+    footer {
+        max-width: 436px;
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .rodape {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box {
+        margin-top: 20px;
+    }
+}

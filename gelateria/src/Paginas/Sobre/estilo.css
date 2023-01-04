@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner-sobre {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/public/assets/banner-sobre.png');
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-sobre h1 {
+    font-size: 6.5rem;
+    color: #fff;
+    text-shadow: #000 5px 5px;
+}
+
+.texto-sobre {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.texto-sobre h2 {
+    font-size: 2.5rem;
+}
+
+.texto-sobre h3 {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.texto-sobre p {
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.container-imagens {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+}
+
+.container-imagens img {
+    width: calc(100% / 2);
+}
+
+@media screen and (max-width: 436px) {
+    .banner-sobre {
+        background-position: center;
+    }
+
+    .banner-sobre h1 {
+        font-size: 2.5rem;
+    }
+
+    .texto-sobre {
+        width: 100%;
+    }
+
+    .container-imagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-imagens img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 437px) and (max-width: 768px) {
+    .banner-sobre {
+        width: 100%;
+        background-position: center;
+    }
+
+    .banner-sobre h1 {
+        font-size: 4rem;
+    }
+
+    .texto-sobre {
+        width: 100%;
+    }
+
+    .texto-sobre h2 {
+        font-size: 2rem;
+    }
+
+    .container-imagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-imagens img {
+        width: 100%;
+    }
+}
